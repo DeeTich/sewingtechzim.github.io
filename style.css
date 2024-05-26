@@ -1,0 +1,410 @@
+:root{
+    --primaryBG:#2c11da; 
+    --lightBG: #ced1c1;
+    --greyText:#191a17;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209, 244, 250);
+}
+
+.main-wrapper{
+    max-width: 1300px;
+    margin: 0px 5px;
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+nav{
+    background-color: rgb(58, 14, 218);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+nav .rightTopbar{
+    display: flex;
+    align-items: center;
+}
+
+nav .rightTopbar .menu{
+    margin-right: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 10px;
+    list-style-type: none;
+    
+}
+
+nav .menu a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav .menu a:hover{
+    color: #b38282;
+
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav .profile h2{
+    height: 10px;
+}
+
+nav .profile img{
+    height: 35px;
+    border: 2px solid #f4f4f4;
+    border-radius: 100%;
+    width: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left:10px
+}
+
+nav .profileLink{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobileMenu{
+    background-color: rgb(48, 26, 241);
+    width: 70%;
+    height: 200px;
+    visibility: hidden;
+    display: none;
+}
+
+.mobileMenuIcon{
+      visibility: hidden;
+}
+
+.chatBar{
+    width: 100px;
+    height: 50px;
+    font-size: 80px;
+    color: var(--primaryBG);
+    position: fixed;
+    bottom: 40px;
+    right: -20px;
+ }
+
+ aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    max-width: 350px;
+    height: 500px;
+    color: var(--greyText);
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+
+ }
+
+ aside li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+ }
+ aside li:hover{
+    background-color: var(--lightBG);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--primaryBG);
+ }
+
+ aside li .menu-icon{
+    font-size: 18px;
+    margin: 0px 10px;
+
+ }
+
+ aside li .menu-label{
+    font-size: 14px;
+    font-weight: 600;
+ }
+
+ aside .sideFooter{
+    font-size: 12px;
+    padding: 10px;
+ }
+
+ main{
+   width: 500px;
+   flex-grow: 1;
+   
+ }
+
+.titleBar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    align-items: center;
+}
+
+.titleBar .left{
+    display: flex;
+    align-items: center;
+}
+
+
+.titleBar .right{
+    display: flex;
+    align-items: center;
+}
+
+.titleBar .label{
+    font-size: 12px;
+}
+
+.labelIcon{
+    font-size: 30px;
+    color: coral;
+    margin: 0px 5px;
+}
+
+main .mainTop{
+    background-color: white;
+    border-radius: 5px ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main .topSellers{
+    border-bottom: 1px rgb(223, 219, 219) dashed;
+    margin-bottom: 15px;
+
+}
+
+
+main .topSellers .content{
+       padding: 10px;
+       flex-wrap: wrap;
+       display: flex;
+
+}
+
+main .topSellers .content .profileCard{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-grow: 1;
+    margin: 0px 5px;
+}
+
+main .topSellers .content .profileCard img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+main .topSellers .content .profileCard h2{
+    font-size: 14px;
+}
+
+main .topSellers .content .profileCard p{
+    font-size: 12px;
+}
+
+
+/* Top Articles Starts*/
+main .topArticles{
+    border-bottom: 1px rgb(223, 219, 219) dashed;
+    margin-bottom: 15px;
+
+}
+
+
+main .topArticles .content{
+       padding: 10px;
+       flex-wrap: wrap;
+       display: flex;
+
+}
+
+main .topArticles .content .articleCard{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    flex-grow: 1;
+    margin: 10px;
+    background-color: white;
+}
+
+main .topArticles .content .articleCard img{
+    width: 120px;
+    height: 100px;
+    border-radius: 5%;
+    margin-right: 5px;
+}
+
+main .topArticles .content .articleCard h2{
+    font-size: 14px;
+}
+
+main .topArticles .content .articleCard p{
+    font-size: 12px;
+}
+
+
+/*Top Articles Ends*/
+
+main .mainBottom{
+    background-color: white;
+    border-radius: 5px ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main .mainBottom .titleBar{
+    margin-bottom: 15px;
+}
+
+main .mainBottom .searchForm{
+    border-bottom: 1px rgb(223, 219, 219) dashed;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+main .mainBottom .searchForm #textInput{
+width: 75%;
+height: 30px;
+border: #ebd6d6 1px solid;
+border-radius: 20px;
+}
+
+main .mainBottom .searchForm #textInput::placeholder{
+    padding-left: 15px;
+   
+}
+
+main .mainBottom .searchForm #submit{
+    width: 90px;
+    height: 30px;
+    background-color: var(--primaryBG);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+main .mainBottom .content{
+    display: flex;
+}
+
+main .mainBottom .content .latestPostCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    flex-grow: 1;
+    margin: 10px;
+    background-color: white;
+}
+
+main .mainBottom .content .latestPostCard img{
+    width: 100%;
+    height: 140px;
+    border-radius: 5%;
+    margin-right: 5px;
+}
+
+main .mainBottom .content .latestPostCard .latestPostContent{
+    
+}
+
+main .mainBottom .content .latestPostCard h2{
+    font-size: 14px;
+}
+
+main .mainBottom .content .latestPostCard p{
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 600px){
+    nav .menu{
+    display: none;
+         }
+
+    nav .profile{
+    display: none;
+         }
+
+    .mobileMenuIcon{
+        visibility: visible;
+        margin-right: 10px;
+         }
+
+    .mobileMenu{
+        background-color: var(--primaryBG);
+        width: 70%;
+        height: 100vh;
+        visibility: hidden;
+        display: none;
+        padding-top: 10px;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        padding-left: 5px;
+                }
+
+    .mobileMenu li{
+        margin-bottom: 10px;
+        padding: 5px;
+        color: white
+        
+         }
+         .mobileMenu li{
+            border-bottom: #f4f4f4 1px dashed;
+            list-style-type: none;
+             }
+
+
+      .mobileMenu li:hover{
+        color: purple ;
+        }
+
+      aside{
+        display: none;
+      }
+      main{
+        width: 100%;
+      }
+      .logo{
+        font-size: 8px;
+      }
+
+}
+
+
